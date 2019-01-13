@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Biblioteka</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+<!-- <link rel="stylesheet" type="text/css" href="/css/moje.css" /> -->
+<style>
+.h1 { 
+text-align: center;
+}
+.autor {
+padding-left: 50px;
+}
+.godzina {
+padding-left: 50px;
+}
+</style>
+</head>
+<body>
+<div class="h1">
+<h1>Wybierz autora</h1>
+</div>
+<div class="autor">
+<form action="WybierzAutora" method="POST">
+Wybierz autora<br>
+<select name="autor">
+<option value="Stanisław Lem">Stanisław Lem</option> 
+<option value="J.R.R. Tolkien">J.R.R. Tolkien</option>
+<option value="George R.R. Martin">George R.R. Martin</option>
+<option value="Stephen King">Stephen King</option>
+</select>
+</div>
+<br>
+<div class="godzina">
+<p> Wybierz godziny odbioru ksiązki: <br>
+<input type="checkbox" name="godzina" value="10:00 - 12:00"> 10:00 - 12:00<br>
+<input type="checkbox" name="godzina" value="12:00 - 14:00"> 12:00 - 14:00<br>
+<input type="checkbox" name="godzina" value="14:00 - 16:00"> 14:00 - 16:00<br>
+<input type="checkbox" name="godzina" value="16:00 - 18:00"> 16:00 - 18:00<br>
+<br>
+<input type="submit" value="wyslij">
+</p>
+</div>
+
+</form>
+</body>
+</html>
